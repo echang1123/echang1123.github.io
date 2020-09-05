@@ -25,35 +25,44 @@
                 </nav>
             </div>
         </header>
-        
+
         <div class = "page-section" id = "ab">
+            <div class="particles">
+            <canvas id = "particlesEffect"></canvas>
+            </div>
             <section>
                 <div class = "first_cont">
-                    <div>
+                    <div class="abhdr">
                         <h1>About me</h1>                    
                     </div>
                 </div>
                 <div class = "a_cntnr-1">
                     <div class = "a_box_1">
-                        <img src = "img/profile_pic.png" alt = "profile picture" width = "100%" height = "100%">
+                        <img src = "img/profile_pic.png" alt = "profile picture">
                     </div>
-                    <div class = "a_box_2">
+                    <div class="a_boxes">
+                      <div class = "a_box_2">
                         <h4>A little bit about myself...</h4>
-                        <p> I like building cool software mainly through JS or Java and am always open to learning new things!  Check out some of my work in my <a href = "#portf" style="color: black">portfolio</a>.</p>
-                        <p>Reach out to me at <a href = "#cont" style = "color:black">contact page</a>.</p>
+                        <p> I like building cool software mainly through JS or Java and am always open to learning new things!  Check out some of my work in my <a href = "#portf" style="color: white">portfolio</a>.</p>
+                        <p>Reach out to me at <a href = "#cont" style = "color:white">contact page</a>.</p>
+                      </div>
+                      <div class = "a_box_3">
+                          <h4>Personal Interests</h4>
+                          <p>When I'm not coding, I enjoy...</p>
+                          <ul>
+                              <li>Listening to all kinds of music, but mostly hip-hop, rock, or house.</li>
+                              <li>Watching and learning about movies</li>
+                              <li>Playing Nintendo Switch</li>
+                              <li>Working out or doing some yoga</li>
+                              <li>Playing tennis and ping pong</li>
+                              <li>Cooking (only when I have time)</li>
+                          </ul>
+                      </div>
                     </div>
-                    <div class = "a_box_3">
-                        <h4>Personal Interests</h4>
-                        <p>When I'm not coding, I enjoy...</p>
-                        <ul>
-                            <li>Listening to all kinds of music, but mostly hip-hop, rock, or house.</li>
-                            <li>Watching and learning about movies</li>
-                            <li>Playing Nintendo Switch</li>
-                            <li>Working out or doing some yoga</li>
-                            <li>Playing tennis and ping pong</li>
-                            <li>Cooking (only when I have time)</li>
-                        </ul>
-                    </div>
+                    
+                </div>
+                <div class="pong">
+                  <canvas id = "gameCanvas" width = "1570" height = "630"></canvas>
                 </div>
             </section>
         </div>
@@ -234,5 +243,7 @@
                 </div>
             </section>
         </div>
+        <script src = "js/pong.js"></script>
+        <script src = "js/particle_effect.js"></script>
     </body>
 </html> 

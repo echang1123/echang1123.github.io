@@ -32,7 +32,7 @@ $( document ).ready( function() {
     }
     
     //for highlighting navbar tab to show which page you're on
-    var header = document.getElementById( "navbuttons" );
+    var header = document.getElementById( "navbar" );
     var btns = header.getElementsByClassName( "btn" );
     for ( var i = 0; i < btns.length; i++ ) {
         btns[i].addEventListener( "click", function() {
