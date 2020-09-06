@@ -35,24 +35,22 @@ function handleMouseClick ( evt ) {
     }
 }    
 
-window.onload = function() {
-    canvas = document.getElementById( 'gameCanvas' );
-    canvasContext = canvas.getContext( '2d' );
-    
-    var framesPerSecond = 55;
-    setInterval( function () {
-        moveEverything();
-        drawEverything();
-    }, 1000/framesPerSecond );
-    
-    canvas.addEventListener( 'mousedown', handleMouseClick);
-    
-    canvas.addEventListener( 'mousemove', 
-            function ( evt ) {
-                    var mousePos = calculateMousePos( evt );
-                    paddle1Y = mousePos.y - ( PADDLE_HEIGHT / 2 );
-    } );
-}
+canvas = document.getElementById( 'gameCanvas' );
+canvasContext = canvas.getContext( '2d' );
+
+var framesPerSecond = 55;
+setInterval( function () {
+    moveEverything();
+    drawEverything();
+}, 1000/framesPerSecond );
+
+canvas.addEventListener( 'mousedown', handleMouseClick);
+
+canvas.addEventListener( 'mousemove', 
+        function ( evt ) {
+                var mousePos = calculateMousePos( evt );
+                paddle1Y = mousePos.y - ( PADDLE_HEIGHT / 2 );
+} );
 
 function ballReset() {
     if( player1Score >= WINNING_SCORE || player2Score >= WINNING_SCORE ) {
