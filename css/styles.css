@@ -181,12 +181,13 @@ h4{
   z-index: 0;
   position: absolute;
   left: 10rem;
-  right: 3rem;
+  right: 10rem;
   bottom: 7rem;
   top:  9rem;
 }
 #gameCanvas{
   border-radius: 30px;
+  width:100%;
 }
 
 .particles{
