@@ -141,6 +141,8 @@ h4{
     text-transform: uppercase;
 }
 
+
+
 .a_cntnr-1 div {
     padding: .62em;
     margin-left: 0.92em;
@@ -151,8 +153,7 @@ h4{
 
 .a_box_1 {
     z-index: -1;
-    position: relative;
-    /* left: rem; */
+    position: relative; 
     top: 6rem;
     right: 4rem;
     height: 60%;
@@ -160,11 +161,13 @@ h4{
 .a_box_1 img {
   border-radius: 30px;
 }
+
 .a_boxes{
   width: 30%;
   left: 15rem;
   top: 1rem;
 }
+
 .a_box_2, .a_box_3 {
     z-index: -1;
 }
@@ -187,7 +190,9 @@ h4{
 }
 #gameCanvas{
   border-radius: 30px;
-  width:100%;
+  /* position:  absolute; */
+  /* width: 800; */
+  /* height: 600; */
 }
 
 .particles{
@@ -317,163 +322,37 @@ h3 {
 }
 
 /*media queries*/
-@media screen and (max-width: 1300px){
-    /* #ab {
-        height: 130%;
-    }
-    .first_cont div {
-        margin-bottom: 0;
-    }
-    .a_cntnr-1 {
-        flex-wrap: wrap;
-    }
-    .a_box_1 {
-        width: 100%;
-    }
-    .a_box_1 img {
-        width: 25%;
-        display:block;
-        margin: auto;
-    }
-    .a_box_2, .a_box_3 {
-        width: 30%;
-    }
-    #edu {
-        height: 150%;
-    }
-    .sec_cont_edu img {
-        width: 6%;
-        height: 6%;
-    }
-    .sec_cont_portf {
-        grid-template-columns: repeat(4, .18fr);
-    }
-    .cont_contact img {
-        width: 20%;
-    } */
-}
+@media only screen and (min-width: 374px) and (max-width: 1000px) and (min-height: 666px) and (max-height: 2000px){
+  .a_boxes{
+    width: 60%;
+    left: .2rem;
+     top: .2rem;
+  }
+  .a_box_1{
+    z-index: -1;
+    position: absolute;
+    left: 0rem;
+    right: .2rem;
+    height: 60%;
+    width: 18%; 
+  }
 
-@media screen and (max-width: 1010px) {
-    /* .sec_cont_edu img {
-        width: 8%;
-        height: 8%;
-    }
-    .sec_cont_portf {
-        grid-template-columns: repeat(4, .23fr);
-    } */
-}
-
-@media screen and (max-width: 795px) {
-    /* .sec_cont_edu img {
-        width: 12%;
-        height: 12%;
-    }
-    #portf {
-        height: 130%;
-    }
-    .sec_cont_portf {
-        grid-template-columns: repeat(2, .28fr);
-    } */
-}
-
-@media screen and (max-width: 750px){
-    /* nav a {
-        font-size: 0.8em;
-    }
-    .a_box_1 img {
-        width: 40%;
-    }
-    #edu {
-        height: 150%;
-    }
-    .cont_contact img {
-        width: 40%;
-    } */
-}
-
-@media screen and (max-width: 700px){
-    /* .first_cont div {
-        margin-top: 5.5em;
-    }
-    .sec_cont_edu div {
-        margin: 0 1em 1em 1em;
-    }
-    .sec_cont_portf {
-        grid-template-columns: repeat(2, .33fr);
-    } */
-}
-
-@media screen and (max-width:605px) {
-    /* #ab {
-        height: 150%;
-    }
-    .s_cntnr_1, .s_cntnr_2 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .sec_cont_exp div {
-        margin: 0 2em 1em 2em;
-    }
-    #cont {
-        height: 120%;
-    }
-    .cont_contact div {
-        margin: 0 1em 1em 1em; */
-    }
-}
-
-@media screen and (max-width: 526px){
-    /* #ab {
-        height: 165%;
-    }
-    .first_cont div {
-        margin-top: 6.5em;
-        margin-bottom: 1.3em;
-    }
-    .a_cntnr-1 div {
-        padding: 0;
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    .a_box_1 img {
-        width: 45%;
-    }
-    .a_box_2, .a_box_3 {
-        width: 100%;
-    }
-    #portf {
-        height: 150%;
-    }
-    .sec_cont_portf div {
-        margin-left: 0.3em;
-        margin-right: 0.3em;
-    }
-    .cont_contact img {
-        width: 35%;
-    } */
-}
-
-@media screen and (max-width: 400px) {
-    /* .a_box_1 img {
-        width: 60%;
-    }
-    .s_cntnr_1, .s_cntnr_2 {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    .s_cntnr_1 div, .s_cntnr_2 div {
-        font-size: .75em;
-    }
-    #edu {
-        height: 190%;
-    }
-    .sec_cont_edu img {
-        width: 20%;
-        height: 20%;
-    }
-    #porthead1, hdr_cont {
-        font-size: 2em;
-    }
-    .cont_contact img {
-        width: 55%;
-    } */
+  .a_box_1 img{
+    width: 100%;
+  }
+  .a_box_2 p{
+    line-height: 130%;
+  }
+  
+  .a_box_3 li{
+    line-height: 130%;
+  }
+  .pong{
+    left: 1rem; 
+    right: 1rem;
+  }
+  #gameCanvas{
+    width: 100%;
+    height: 35%;
+  }
 }
