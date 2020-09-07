@@ -245,7 +245,7 @@ h4{
   padding: .75rem .75rem .75rem .75rem;
   border-radius: 30px;
   margin-right: 2rem;
-  z-index: 1;
+  z-index: 0;
 
 }
 
@@ -254,7 +254,7 @@ h4{
   height: 90%;
   border-radius: 30px;
   padding: .75rem .75rem .75rem .75rem;
-  z-index: 1;
+  z-index: 0;
 }
 
 .s_box_3{
@@ -263,7 +263,7 @@ h4{
   margin-right: 50rem;
   padding: .75rem .75rem .75rem .75rem;
   border-radius: 30px;
-  z-index: 1;
+  z-index: 0;
   /* display: flex; */
   /* position: absolute; */
   /* justify-content: center */
@@ -323,6 +323,7 @@ h3 {
     grid-template-columns: repeat(4, .15fr);
     justify-content: center;
     align-items: end;
+    z-index: 0;
 }
 
 .sec_cont_portf div {
@@ -332,11 +333,17 @@ h3 {
 
 .sec_cont_portf h4 {
     text-align: center;
+    z-index:  0;
+    position: relative;
 }
 
 .sec_cont_portf img {
     width: 100%;
     height: 100%;
+}
+.p_img{
+  z-index: 0;
+  position: relative;
 }
 
 #exp {
