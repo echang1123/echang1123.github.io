@@ -111,11 +111,13 @@ section {
     min-height: 100%;
 }
 
-.first_cont, .a_cntnr-1, .s_cntnr_1, .s_cntnr_2, .sec_cont_edu, .sec_cont_exp, .cont_contact {
+.first_cont, .a_cntnr-1, .sec_cont_edu, .sec_cont_exp, .cont_contact {
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: center;
 }
+
+
 
 .first_cont div {
     margin-top: 3em;
@@ -196,16 +198,17 @@ h4{
 }
 
 .particles{
-  position: absolute;
+  position: fixed;
   z-index: 0;
 }
 
 #sk {
-    background-color: #333333;
-    color: white;
+    background-color: #222222;
+    /* background-color: white; */
+    color: black; 
 }
 
-#sk .first_cont div, #edu .first_cont div, #exp .first_cont div, #portf .first_cont div, #cont .first_cont div {
+.first_cont div, #edu .first_cont div, #exp .first_cont div, #portf .first_cont div, #cont .first_cont div {
     margin-bottom: 0;
 }
 
@@ -214,21 +217,59 @@ h4{
     border-bottom-color: #7EF9FF;
 }
 
-.s_cntnr_1 div, .s_cntnr_2 div {
-    padding: .5em;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
 #sk li {
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    line-height: 140%;
 }
 
-.s_cntnr_2 {
-    margin-top: 1em;
+.s_cntnr-1{
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
 }
 
+.s_box_1, .s_box_2, .s_box_3{
+  background-color: rgba(255, 255, 255, 0.726);
+  font-weight: 1.5rem;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.s_boxes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.s_box_1{
+  margin-bottom: 3rem;
+  padding: .75rem .75rem .75rem .75rem;
+  border-radius: 30px;
+  margin-right: 2rem;
+  z-index: 1;
+
+}
+
+.s_box_2{
+  /* left: 3rem; */
+  height: 90%;
+  border-radius: 30px;
+  padding: .75rem .75rem .75rem .75rem;
+  z-index: 1;
+}
+
+.s_box_3{
+  position: absolute;
+  margin-left: 50em;
+  margin-right: 50rem;
+  padding: .75rem .75rem .75rem .75rem;
+  border-radius: 30px;
+  z-index: 1;
+  /* display: flex; */
+  /* position: absolute; */
+  /* justify-content: center */
+  /* width: 30%; */
+  /* height: 18%; */
+}
 #edu {
     height: 130%;
     background-color: orange;
