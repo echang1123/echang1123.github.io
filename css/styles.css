@@ -368,6 +368,10 @@ h3 {
 .cont_contact img {
     margin-bottom: 1.5em;
 }
+.cont_contact h3{
+  position: relative;
+  z-index: 0;
+}
 
 /*media queries*/
 @media only screen and (min-width: 320px) and (max-width: 1800px){
