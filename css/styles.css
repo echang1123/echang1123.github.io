@@ -374,7 +374,7 @@ h3 {
 }
 
 /*media queries*/
-@media only screen and (min-width: 375px) {
+/* @media screen and (min-width: 375px) {
   nav a {
     font-size: 1.8rem;
   }
@@ -427,4 +427,4 @@ h3 {
     width: 100%;
     height: 108%;
   }
-}
+} */
