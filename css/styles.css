@@ -186,15 +186,11 @@ h4{
   z-index: 0;
   position: absolute;
   left: 10rem;
-  right: 10rem;
   bottom: 7rem;
   top:  9rem;
 }
 #gameCanvas{
   border-radius: 30px;
-  /* position:  absolute; */
-  /* width: 800; */
-  /* height: 600; */
 }
 
 .particles{
@@ -374,7 +370,64 @@ h3 {
 }
 
 /*media queries*/
-/* @media screen and (min-width: 375px) {
+@media (max-width: 1815px) {
+  .pong{
+    left: 5rem;
+  }
+}
+@media (max-width: 1674px) {
+  .pong{
+    left: 2rem;
+  }
+}
+@media (max-width: 1622px) {
+  .pong{
+    left: 0.2rem;
+    right: 0.2rem;
+  }
+  #gameCanvas{
+    width: 100%;
+    height: 108%;
+  }
+}
+
+@media (max-width: 1158px) {
+  .a_cntnr-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .a_cntnr-1 div {
+    padding: .2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    z-index: 1;
+    position: relative;
+}
+  .a_boxes{
+    width: 40%;
+    left: 5rem;
+    top: 0rem;
+  }
+  .a_box_1 {
+    width: 13%;
+    right: 0rem;
+    top: 1rem;
+    bottom: 2rem;
+  }
+  .a_box_1 img {
+    width: 100%;
+  }
+  .a_box_2 p{
+    line-height: 130%;
+  }
+  
+  .a_box_3 li{
+    line-height: 130%;
+  }
+
+}
+
+@media (max-width: 400px) and (min-width: 355px){
   nav a {
     font-size: 1.8rem;
   }
@@ -392,7 +445,6 @@ h3 {
     align-self: center;
     width: 80%;
     left: .2rem;
-     top: 3.2rem;
   }
   .a_boxes p, .a_boxes h4, .a_boxes li{
     font-size: 2.1rem;
@@ -413,11 +465,11 @@ h3 {
     width: 100%;
   }
   .a_box_2 p{
-    line-height: 130%;
+    line-height: 110%;
   }
   
   .a_box_3 li{
-    line-height: 130%;
+    line-height: 110%;
   }
   .pong{
     left: 1rem; 
@@ -427,4 +479,4 @@ h3 {
     width: 100%;
     height: 108%;
   }
-} */
+}
