@@ -427,7 +427,7 @@ h3 {
 
 }
 
-@media (max-width: 376px) {
+@media (max-device-width: 375px) {
   nav a {
     font-size: 1.8rem;
   }
