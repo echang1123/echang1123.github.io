@@ -1,3 +1,4 @@
+window.onresize = function(){ location.reload(); }
 document.addEventListener("DOMContentLoaded", function() {
   // Add smooth scrolling to menu tabs
     $( "a" ).on( 'click', function( event ) {
