@@ -1,7 +1,10 @@
-window.onresize = function(){ location.reload(); }
-document.addEventListener("DOMContentLoaded", function() {
-  // Add smooth scrolling to menu tabs
-    $( "a" ).on( 'click', function( event ) {
+
+// document.addEventListener("DOMContentLoaded", function() {
+$(window).resize( function() {
+    location.reload();
+
+      // Add smooth scrolling to menu tabs
+      $( "a" ).on( 'click', function( event ) {
         if ( this.hash !== "" ) {
             // Prevent default anchor click behavior
             event.preventDefault();
@@ -42,5 +45,8 @@ document.addEventListener("DOMContentLoaded", function() {
         this.className += " active";
         } );
     }
+
+  });
+
     
-} );
+// } );
