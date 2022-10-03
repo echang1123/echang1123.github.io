@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset = "UTF-8">
         <title>Eugene Chang</title>
         <link href = "http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel = "stylesheet">
@@ -8,136 +10,132 @@
         <link href = "https://fonts.googleapis.com/css?family=Work+Sans:400,600">
         <script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src = "js/main.js"></script>
-    </head>
-    <body>
+
         <header id = "navbar">
-            <div class = "nav-container">
+            <div id = "nav-container">
                 <nav>
                     <ul>
-                        <li><a href = "#ab" class = "btn active">About Me</a></li>
-                        <li><a href = "#sk" class = "btn">Skills</a></li>
-                        <li><a href = "#edu" class = "btn">Education</a></li>
-                        <li><a href = "#portf" class = "btn">Portfolio</a></li>
-                        <li><a href = "#exp" class = "btn">Experience</a></li>
-                        <li><a href = "#cont" class = "btn">Contact</a></li>
+                        <li><a href = "#about">About Me</a></li>
+                        <!-- <li><a href = "#skills">Skills</a></li> -->
+                        <li><a href = "#edu">Education</a></li>
+                        <li><a href = "#port">Portfolio</a></li>
+                        <li><a href = "#exp">Experience</a></li>
+                        <li><a href = "#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <div class = "page-section" id = "ab">
-            <div class="particles">
-            <canvas id = "particlesEffect"></canvas>
+    </head>
+    
+    <body>
+        <div class="particles">
+          <canvas id = "particlesEffect"></canvas>
+        </div>
+
+        <div id = "about">
+            <div class = "page_header">
+                <div>
+                    <h1 id="about_hdr">About me</h1>           
+                </div>         
             </div>
-            <section>
-                <div class = "first_cont">
-                    <div class="abhdr">
-                        <h1>About me</h1>                    
-                    </div>
-                </div>
-                <div class = "a_cntnr-1">
-                    <div class = "a_box_1">
-                        <img src = "img/profile_pic.png" alt = "profile picture">
-                    </div>
-                    <div class="a_boxes">
-                      <div class = "a_box_2">
-                        <h4>A little bit about myself...</h4>
-                        <p> I like building cool software mainly through JS or Java and am always open to learning new things!  Check out some of my work in my <a href = "#portf" style="color: white">portfolio</a>.</p>
-                        <p>Reach out to me at <a href = "#cont" style = "color:white">contact page</a>.</p>
+
+              <div class="pong">
+                <canvas id = "pongCanvas" width = "1720px" height = "720px"></canvas>
+              </div>
+              <div id = "profile_ctnr">
+                  <div id = "profile_pic">
+                      <img src = "img/profile_pic.jpg" alt = "profile picture">
+                  </div>
+                  <div id="profile_text">
+                      <div>
+                          <h4>A little bit about myself...</h4>
+                          <p> I'm a web developer who likes modern/elegant designs.  Thanks for visiting my site! <a href = "#port" style="color: white">Here's some work I do </a>.</p>
+                          <p><a href = "#contact" style = "color:white">Click here if you wanna reach out to me!</a>.</p>
                       </div>
-                      <div class = "a_box_3">
-                          <h4>Personal Interests</h4>
-                          <p>When I'm not coding, I enjoy...</p>
-                          <ul>
-                              <li>Listening to all kinds of music, but mostly hip-hop, rock, or house.</li>
-                              <li>Watching and learning about movies</li>
-                              <li>Playing Nintendo Switch</li>
-                              <li>Working out or doing some yoga</li>
-                              <li>Playing tennis and ping pong</li>
-                              <li>Cooking (only when I have time)</li>
+                      <div>
+                          <h4>When I'm not coding...</h4>
+                          <ul id="interests">
+                              <li>~  I enjoy listening to music  ~</li>
+                              <li>~  Exercise/Yoga  ~</li>
                           </ul>
                       </div>
-                    </div>   
-                </div>
-                <div class="pong">
-                  <!-- width = "1570" height = "630" -->
-                  <canvas id = "gameCanvas" width = "1570" height = "630"></canvas>
-                </div>
-            </section>
-        </div>
-        <div class = "page-section" id = "sk">
-            <section>
-                <div class = "first_cont">
-                    <div>
-                        <h1>Skills</h1>
-                    </div>
-                </div>
-                <div class = "s_cntnr-1">
-                  <div class="s_boxes">
-                    <div class = "s_box_1">
-                      <h4>Languages</h4>
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>C#</li>
-                            <li>C</li>
-                        </ul>
-                    </div>
-                    <div class = "s_box_2">
-                      <h4>Software</h4>
-                      <ul>
-                          <li>Visual Studio, VSCode</li>
-                          <li>Intellij, Py-Charm, C-lion</li>
-                          <li>PostMan</li>
-                          <li>Git</li>
-                          <li>Windows/Unix cmd line</li>
-                          <li>Slack/Trello</li>
-                      </ul>
-                    </div>
                   </div>
-                <div class = "s_box_3">
-                  <h4>Spoken Languages</h4>
+              </div>
+
+        </div>
+
+        <!-- <div id = "skills">
+            <div class = "page_header">
+                <div>
+                    <h1>Skills</h1>
+                </div>
+            </div>
+
+            <div class = "s_cntnr-1">
+              <div class="s_boxes">
+                <div class = "s_box_1">
+                  <h4>Languages</h4>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <div class = "s_box_2">
+                  <h4>Software</h4>
                   <ul>
-                      <li>English</li>
-                      <li>Korean</li>
-                      <li>(Little bit of) Japanese</li>
+                      <li>Visual Studio, VSCode</li>
+                      <li>Intellij, Py-Charm, C-lion</li>
+                      <li>PostMan</li>
+                      <li>Git</li>
+                      <li>Windows/Unix cmd line</li>
+                      <li>Slack/Trello</li>
                   </ul>
                 </div>
               </div>
-            </section>
-        </div>
-        <div class = "page-section" id = "edu">
+            <div class = "s_box_3">
+              <h4>Spoken Languages</h4>
+              <ul>
+                  <li>English</li>
+                  <li>Korean</li>
+                  <li>(Little bit of) Japanese</li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+
+        <div id = "edu">
             <section>
-                <div class = "first_cont">
+                <div class = "page_header">
                     <div>
-                        <h1 id = "eduhead1">Education</h1>
+                        <h1 id = "edu_header">Education</h1>
                     </div>
                 </div>
-                <div class = "sec_cont_edu">
-                    <div id = "e_box_1">
-                        <img src = "img/rit_logo.png" alt = "rit_logo" height = "5%" width = "5%" >
+                <div class = "edu_ctnr">
+                    <div id = "edu_text">
+                        <img src = "img/rit_logo.png" alt = "rit_logo" height = "6%" width = "6%" >
                         <h2>Rochester Institute of Technology</h2>
-                        <h3>Bachelor of Computer Science 2016-Current</h3>
-                        <p>Here I gained and am still gaining extensive knowledge in data structures, algorithms, memory management, and honing my software/web development skills in general.</p>
-                        <p><strong>Graduating in</strong>: 2020-2021 (Not fully confirmed)</p>
-                    </div>
-                    <div>
-                        <img src = "img/rit_logo.png" alt = "rit_logo" height = "5%" width = "5%" >
-                        <h2>Rochester Institute of Technology</h2>
+                        <h3>Bachelor of Computer Science 2016-2022</h3>
+                        <p>Activities and societies: Tennis Club, Judo Club, KISA (Korean International Student Association), ACS (Asian Culture Society)</p>
+                        <p>Exposure to a lot of back-end Java, Python and some experience with machine learning/training data..</p>
+                        <br/>
                         <h3>Bachelor of Film &amp; Animation 2013-2016</h3>
-                        <p>Here I gained experience in animating in 2d/3d and stop motion.  Also, briefly worked with live-action equipment and being on set.  Also worked with Adobe Suite, Sony Vegas, and a little bit of TV-Paint and Maya.</p>
-                    </div>  
+                        <p>Took some acting and animation classes.</p>
+                        <p>Participated in Ani-Jam (24 hr animation competition).</p>
+                    </div>
                 </div>
             </section>
         </div>
-        <div class = "page-section" id = "portf">
+        <div id = "port">
             <section>
-                <div class = "first_cont">
+                <div class = "page_header">
                     <div>
-                        <h1 id = "porthead1">Projects</h1>
+                        <h1>Projects</h1>
                     </div>
                 </div>
-                <div class = "sec_cont_portf">
+                <div class = "port_text">
                     <div>
                       <h4>E-Commerce Site (Amazona)</h4>
                       <div class = "p_img">
@@ -189,44 +187,53 @@
                 </div>
             </section>
         </div>
-        <div class = "page-section" id = "exp">
+        <div id = "exp">
             <section>
-                <div class = "first_cont">
+                <div class = "page_header">
                     <div>
                         <h1>Experience</h1>
                     </div>
                 </div>
-                <div class = "sec_cont_exp">
-                    <div>
-                        <h2>Front End Developer SDLK</h2>
+                <div class = "exp_text">
+                    <div class = "exp_text">
+                        <h2>Full Stack Developer Intern</h2>
+                        <h3>Bazar</h3>
+                        <p>Designed chat system for Bazar's marketplace apps to help vendors sell their products using Django & React Native.</p>
+                        <p>Provided ideas for UI improvements, data optimization, and third-party packages.</p>
+                        <p><strong>Period:</strong> Feb. 2022 - April 2022</p>
+                    </div>
+
+                    <div class = "exp_text">
+                        <h2>Front End Developer Intern</h2>
                         <h3>Largo Capital, Inc</h3>
                         <p>Work alongside, communicate with business to translate their needs into a real estate web app.</p>
                         <p>Participated in daily stand-up meetings in an agile development workflow.</p>
                         <p>Used Laravel to develop MVC application written in PHP, while using PostgreSQL for our relational database.</p>
                         <p>Modernized website interface to enhance user experience. (Bootstrap, JQuery, HTML, CSS, Twig)</p>
-                        <p><strong>Period:</strong>: Dec. 2020 - August 2021</p>
+                        <p><strong>Period:</strong> Dec. 2020 - August 2021</p>
                     </div>
                 </div>
             </section>
         </div>
-        <div class = "page-section" id = "cont">
+        <div id = "contact">
             <section>
-                <div class = "first_cont">
+                <div class = "page_header">
                     <div>
-                        <h1 id = "hdr_cont">Let's Get in Touch!</h1>
+                        <h1 id = "contact_header">Contact Me</h1>
                     </div>
                 </div>
-                <div class = "cont_contact">
+                <div class = "contact_text">
                     <div>
                         <img src = "img/contact_photo.jpg" alt = "contact" width = "18%">
                         <h3>E-mail: eugenechang1123@gmail.com</h3>
-                        <h3>LinkedIn: <a href = "https://www.linkedin.com/in/eugene-chang-0123123/" target = "_blank" rel = "noopener noreferrer" style="color: white">https://linkedin.com/in/eugene-chang-0123123</a></h3>
-                        <h3>CodePen: <a href = "https://codepen.io/echang1123/#" target = "_blank" rel = "noopener noreferrer" style = "color: white">https://codepen.io/echang1123/#</a></h3>
-                        <h3>Github: <a href = "https://github.com/echang1123" target = "_blank" rel = "noopener noreferrer" style = "color: white">https://github.com/echang1123</a></h3>
+                        <h3>LinkedIn: <a href = "https://www.linkedin.com/in/eugene-chang-0123123/" target = "_blank" rel = "noopener noreferrer" style="">https://linkedin.com/in/eugene-chang-0123123</a></h3>
+                        <!-- <h3>CodePen: <a href = "https://codepen.io/echang1123/#" target = "_blank" rel = "noopener noreferrer" style = "">https://codepen.io/echang1123/#</a></h3> -->
+                        <h3>Github: <a href = "https://github.com/echang1123" target = "_blank" rel = "noopener noreferrer" style = "">https://github.com/echang1123</a></h3>
                     </div>
                 </div>
             </section>
         </div>
+
         <script src = "js/pong.js"></script>
         <script src = "js/particle_effect.js"></script>
     </body>
