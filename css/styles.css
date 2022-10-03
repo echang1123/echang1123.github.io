@@ -1,31 +1,35 @@
-body, html, .page-section {
+html, body {
   height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
 }
-body {
-    margin: 0;
-    background: #222;
-}
+
 #navbar {
   position: fixed;
   width: 100%;
-  z-index: 2;
+  margin: 0 auto;
+  display: inline;
+  z-index: 1;
 }
-.nav-container {
+#nav-container {
   position: relative;
-	width: 80%;
 	margin: 0 auto;
   font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
 }
+
+/* For creating a separate top Nav Bar with shadow */
 header {
-    background: white;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  background: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
-header::after {
-    content: '';
-    display: table;
-    clear: both;
+
+.header::after {
+  content: '';
+  display: table;
+  clear: both;
 }
+
 nav {
     float: left;
 }
@@ -79,32 +83,27 @@ nav a:hover::before {
     top: 0;
     width: 100%;
 }
-#ab {
-    background-color: white;
+#about {
     color: white;
+    height: 100%;
 }
-#ab h1 {
+
+#about h1 {
   font-weight: bold;
 }
-section {
-    min-height: 100%;
-}
-.first_cont, .a_cntnr-1, .sec_cont_edu, .sec_cont_exp, .cont_contact {
+.page_header, #profile_ctnr, .edu_ctnr, .exp_text, .port_text, .contact_text {
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: center;
 }
-.first_cont div {
-    margin-top: 3em;
+.page_header div {
+    margin-top: 4em;
     margin-bottom: 1.3em;
     z-index: 0;
 }
-.abhdr {
-  z-index: 1;
-}
+
 h1 {
     text-transform: uppercase;
-    font-weight: 300;
     font-size: 2.25em;
     color: #0f1025;
     letter-spacing: 0.1em;
@@ -114,64 +113,99 @@ h1 {
 h4 {
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    margin: 1 1 1 1;
 }
-.a_cntnr-1 div {
-    padding: .62em;
-    margin-left: 0.92em;
-    margin-right: 0.92em;
-    z-index: 1;
+
+.port_text {
+  margin-bottom: 3em;
+}
+#port h4 {
+  font-weight: normal;
+  letter-spacing: 0.13em;
+}
+
+#profile_ctnr {
+  display: flex;
+  margin-top: 4em;
+  /* width: 1300px; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+
+#profile_ctnr div {
+    /* padding: .62em; */
+    /* margin-left: 0.92em; */
+    /* margin-right: 0.92em; */
+    /* margin: 10px; */
     position: relative;
+    /* border: 3px solid white; */
+    /* display */
 }
-.a_box_1 {
-    z-index: -1;
-    position: relative; 
-    top: 6rem;
-    right: 4rem;
-    height: 60%;
+#profile_pic {
+    /* top: 10em; */
+    top: 1em;
+    left: 1.5em;
+
 }
-.a_box_1 img {
-  border-radius: 30px;
+#profile_pic img {
+  border-radius: 20px;
+  width: 300px;
+  /* right: 1em; */
+  height: auto;
+  /* justify-content: center; */
 }
-.a_boxes{
-  width: 30%;
-  left: 15rem;
-  top: 1rem;
+#profile_text {
+  width: 430px;
+  /* top: 8em; */
+  left: 3em;
+  margin-right: 3.5em;
 }
-.a_box_2, .a_box_3 {
-    z-index: -1;
-}
-.a_box_2 p {
+
+#profile_text div {
   line-height: 155%;
 }
-.a_box_3 li{
-  line-height: 155%;
+
+#interests {
+  list-style-type: none;
 }
+
 .pong {
+  position: absolute;  
+  top: 11em;
+  bottom: 5em; 
+  text-align: center;
+  left: 3em;
+  right: 3em;
   z-index: 0;
-  position: absolute;
-  left: 10rem;
-  bottom: 7rem;
-  top:  9rem;
+  /* margin: 2.3em 3em 0em 3em; */
+  /* position: ; */
 }
-#gameCanvas {
+
+#pongCanvas {
   border-radius: 30px;
+  width: 100%; 
+  height: 100%;
+
 }
+
 .particles {
   position: fixed;
   z-index: 0;
 }
-#sk {
+#skills {
     background-color: #50505028;
     color: black; 
+    height: 100%;
 }
-.first_cont div, #edu .first_cont div, #exp .first_cont div, #portf .first_cont div, #cont .first_cont div {
+.page_header div, #edu .page_header div, #exp .page_header div, #port .page_header div, #cont .page_header div {
     margin-bottom: 0;
 }
-#sk h1 {
+#skills h1 {
     color: white;
     border-bottom-color: #7EF9FF;
 }
-#sk li {
+#skills li {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     line-height: 140%;
@@ -212,30 +246,27 @@ h4 {
   z-index: 0;
 }
 #edu {
-    height: 130%;
-    background-color: rgba(255, 102, 0, 0.466);
-    color: white;
+    background-color: rgb(245, 245, 207);
 }
-#eduhead1 {
-    border-bottom-color: #7EF9FF;
-    color: white;
-}
-.sec_cont_edu, .sec_cont_exp, .cont_contact {
+
+.edu_ctnr, .exp_text, .contact_text {
     display: block;
 }
-.sec_cont_edu {
+.edu_ctnr {
   position: relative;
   z-index: 0;
 }
-.sec_cont_edu div, .sec_cont_exp div, .cont_contact div {
+.edu_ctnr div, .exp_text div, .contact_text div {
     text-align: center;
-    padding: 1em 1em 2em 1em; 
-    margin: 0 7em 1em 7em;
+    padding: 1em 1.5em 2em 1.5em; 
     letter-spacing: 0.085em;
 }
-#e_box_1, .sec_cont_exp div {
-    border-bottom: .2em solid #ccc;
+
+#exp p {
+  font-size: 1em;
+  letter-spacing: 0.020em;
 }
+
 h2, h3 {
     text-transform: uppercase;
 }
@@ -243,35 +274,30 @@ h3 {
     font-weight: 400;
     font-size: 1.1em;
 }
-#edu p, #exp p {
-    letter-spacing: 0;
+
+#edu p {
+    letter-spacing: 0.020em;
     font-size: 1em;
 }
-#portf {
-    background-color: rgba(0, 54, 90, 0.671);
-    color:rgb(250, 144, 250);
-}
-#porthead1 {
-    border-bottom-color: rgb(250, 144, 250);
-    color: rgb(250, 144, 250);
-}
-.sec_cont_portf {
+
+.port_text {
     display: grid;
-    grid-template-columns: repeat(4, .15fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* max-width: 100%; */
     justify-content: center;
     align-items: end;
     z-index: 0;
 }
-.sec_cont_portf div {
+.port_text div {
     margin-right: 1em;
     margin-left: 1em;
 }
-.sec_cont_portf h4 {
+.port_text h4 {
     text-align: center;
     z-index:  0;
     position: relative;
 }
-.sec_cont_portf img {
+.port_text img {
     width: 100%;
     height: 100%;
 }
@@ -280,140 +306,61 @@ h3 {
   position: relative;
 }
 #exp {
-    background-color: rgba(221, 26, 26, 0.74);
-    color: rgb(240, 255, 188);
+    background-color: rgba(38, 73, 189, 0.637);
+    color: rgba(255, 255, 255, 0.801);
     z-index: 0;
 }
 #exp h1 {
     text-align: center;
-    border-bottom-color: rgb(240, 255, 188);
-    color: rgb(240, 255, 188);
-    font-weight: bold;
+    border-bottom-color: rgba(255, 255, 255, 0.801);;
+    color: white;
 }
-.sec_cont_exp {
+.exp_text {
   position: relative;
   z-index: 0;
 }
-.sec_cont_exp div {
-  border-bottom-color: rgb(240, 255, 188);
-}
-#cont {
-    width: 100%;
-    background-color: black;
-    color: white;
-}
-#hdr_cont {
-    color: white;
-    border-bottom-color: white;
-}
-.cont_contact img {
-    margin-bottom: 1.5em;
-    border-radius: 30px;
-}
-.cont_contact h3, img {
-  position: relative;
-  z-index: 0;
+.exp_text div {
+  border-bottom-color: white;
 }
 
-/*media queries*/
-@media (max-width: 1815px) {
-  /* .pong{
-    left: 5rem;
+#contact {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 535px) {
+  #nav-container {
+    font-size: .65em;
+  }
+}
+
+@media (max-width: 676px) {
+
+}
+
+@media (max-width: 802px) {
+  #profile_ctnr {
+    margin-top: 1em;
+  }
+  #profile_text {
+    top: 1em;
+    font-size: .8em;
+    /* width: 400px; */
+  }
+  #profile_pic {
+    left: 0;
+  }
+  #profile_pic img {
+    width: 38vw;
+  }
+  /* #profile_text {
+    width: 400px;
   } */
 }
-@media (max-width: 1674px) {
-  /* .pong{
-    left: 2rem;
-  } */
-}
-@media (max-width: 1622px) {
-  /* .pong{
-    left: 0.2rem;
-    right: 0.2rem;
-  } */
-  #gameCanvas{
-    width: 100%;
-    height: 108%;
-  }
-}
-@media (max-width: 1158px) {
-  .a_cntnr-1 {
-    flex-direction: column;
-    align-items: center;
-  }
-  .a_cntnr-1 div {
-    padding: .2rem;
-    margin-right: 0rem;
-    z-index: 1;
-    position: relative;
-  }
-  .a_boxes{
-    width: 40%;
-    /* left: 5rem; */
-    top: 0rem;
-  }
-  .a_box_1 {
-    width: 13%;
-    right: 0rem;
-    top: 1rem;
-    bottom: 2rem;
-  }
-  .a_box_1 img {
-    width: 100%;
-  }
-  .a_box_2 p{
-    line-height: 130%;
-  }
-  .a_box_3 li{
-    line-height: 130%;
-  }
-}
-@media (max-device-width: 500px) {
-  nav a {
-    font-size: 1.8rem;
-  }
-  .nav-container{
-    width: 95%;
-  }
-  .h4{
-    letter-spacing: 0em;
-  }
-  .a_cntnr-1{
-    display: flex;
-    flex-direction: column;
-  }
-  .a_boxes {
-    align-self: center;
-    width: 80%;
-    /* left: .2rem; */
-  }
-  .a_boxes p, .a_boxes h4, .a_boxes li{
-    font-size: 2.1rem;
-  }
-  .a_box_1{
-    z-index: -1;
-    position: absolute;
-    top: 1.5rem;
-    right: .2rem;
-    height: 60%;
-    width: 40%; 
-    align-self: center;
-  }
-  .a_box_1 img{
-    width: 100%;
-  }
-  .a_box_2 p{
-    line-height: 110%;
-  }
-  .a_box_3 li{
-    line-height: 110%;
-  }
-  .pong{
-    /* left: 1rem;  */
-    right: 1rem;
-  }
-  #gameCanvas{
-    width: 100%;
-    height: 108%;
+@media (max-width: 1055px) {
+  .pong {
+    left: .5em;
+    right: .5em;
+    bottom: .5em;
   }
 }

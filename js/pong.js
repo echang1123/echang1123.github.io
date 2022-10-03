@@ -14,7 +14,7 @@ var showWinScreen = false;
 var paddle1Y = 250;
 var paddle2Y = 250;
 const PADDLE_THICKNESS = 10;
-const PADDLE_HEIGHT = 100;
+const PADDLE_HEIGHT = 120;
     
 function calculateMousePos( evt ) {
     var rect = canvas.getBoundingClientRect();
@@ -36,7 +36,7 @@ function handleMouseClick ( evt ) {
 }    
 
 window.onload = function() {
-  canvas = document.getElementById( 'gameCanvas' );
+  canvas = document.getElementById( 'pongCanvas' );
   canvasContext = canvas.getContext( '2d' );
 
   var framesPerSecond = 55;
@@ -145,6 +145,7 @@ function drawEverything() {
     //ball
     colorCircle( ballX, ballY, 7, 'white' );
     //score
+    canvasContext.font = "25px sans-serif";
     canvasContext.fillText( player1Score, 100, 100 );
     canvasContext.fillText( player2Score, canvas.width - 100, 100 );
 }
