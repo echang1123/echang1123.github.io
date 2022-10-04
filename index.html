@@ -15,11 +15,10 @@
             <div id = "nav-container">
                 <nav>
                     <ul>
-                        <li><a href = "#about">About Me</a></li>
-                        <!-- <li><a href = "#skills">Skills</a></li> -->
-                        <li><a href = "#edu">Education</a></li>
-                        <li><a href = "#port">Portfolio</a></li>
+                        <li><a href = "#about">Bio</a></li>
+                        <li><a href = "#port">Projects</a></li>
                         <li><a href = "#exp">Experience</a></li>
+                        <li><a href = "#edu">Education</a></li>
                         <li><a href = "#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -31,17 +30,17 @@
         <div class="particles">
           <canvas id = "particlesEffect"></canvas>
         </div>
-
         <div id = "about">
             <div class = "page_header">
                 <div>
-                    <h1 id="about_hdr">About me</h1>           
+                    <h1>Bio</h1>           
                 </div>         
             </div>
 
-              <div class="pong">
+              <!-- <div class="pong">
                 <canvas id = "pongCanvas" width = "1720px" height = "720px"></canvas>
-              </div>
+              </div> -->
+
               <div id = "profile_ctnr">
                   <div id = "profile_pic">
                       <img src = "img/profile_pic.jpg" alt = "profile picture">
@@ -49,8 +48,15 @@
                   <div id="profile_text">
                       <div>
                           <h4>A little bit about myself...</h4>
-                          <p> I'm a web developer who likes modern/elegant designs.  Thanks for visiting my site! <a href = "#port" style="color: white">Here's some work I do </a>.</p>
-                          <p><a href = "#contact" style = "color:white">Click here if you wanna reach out to me!</a>.</p>
+                          <p> I have about 5 years of university back-end lang(s)/machine learning experience and I've been a web developer for about 3 years recently.  
+                            I appreciate sleek, modern designs and am looking for front end work.  
+                            <br/>
+                            <br/>
+                            Thanks for visiting my site!  &nbsp <a href = "#port">Here's some of my projects! </a>.
+                            <br/>
+                            <br/>
+                            <a href = "#contact">Here's my contact info!</a>
+                          </p>
                       </div>
                       <div>
                           <h4>When I'm not coding...</h4>
@@ -63,49 +69,101 @@
               </div>
 
         </div>
-
-        <!-- <div id = "skills">
-            <div class = "page_header">
-                <div>
-                    <h1>Skills</h1>
-                </div>
-            </div>
-
-            <div class = "s_cntnr-1">
-              <div class="s_boxes">
-                <div class = "s_box_1">
-                  <h4>Languages</h4>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>C#</li>
-                        <li>C</li>
-                    </ul>
-                </div>
-                <div class = "s_box_2">
-                  <h4>Software</h4>
-                  <ul>
-                      <li>Visual Studio, VSCode</li>
-                      <li>Intellij, Py-Charm, C-lion</li>
-                      <li>PostMan</li>
-                      <li>Git</li>
-                      <li>Windows/Unix cmd line</li>
-                      <li>Slack/Trello</li>
-                  </ul>
+        <div id = "port">
+          <section>
+              <div class = "page_header">
+                  <div>
+                      <h1 id = "port_header">Projects</h1>
+                  </div>
+              </div>
+              <div class = "port_text">
+                  <div>
+                    <h4>E-Commerce Site (Amazona)</h4>
+                    <div class = "p_img">
+                    <a href="https://github.com/echang1123/amazonaECommerce" target = "_blank" rel = "noopener noreferrer">
+                        <img src = "img/ecommerce_icon.jpg" alt = "ecommerce_site">
+                    </a>
+                    </div>
+                  </div>
+                  <div>
+                      <h4>Weather App (Vanilla JS)</h4>
+                      <div class = "p_img">
+                      <a href="https://github.com/echang1123/weatherAPI" target = "_blank" rel = "noopener noreferrer">
+                          <img src = "img/weather_icon.jpg" alt = "weather_app">
+                      </a>
+                      </div>
+                  </div>
+                  <div>
+                      <h4>WebCheckers (Java/Ajax)</h4>
+                      <div class = "p_img">
+                      <a href="https://github.com/echang1123/webCheckers" target = "_blank" rel = "noopener noreferrer">
+                          <img src = "img/wc_icon.jpg" alt = "web_checkers">
+                      </a>
+                      </div>
+                  </div>
+                  <div>
+                      <h4>PathBuilder (Java)</h4>
+                      <div class = "p_img">
+                      <a href="https://github.com/echang1123/pathbuilder" target = "_blank" rel = "noopener noreferrer">
+                          <img src = "img/pb_icon.jpg" alt = "path_builder">
+                      </a>
+                      </div>
+                  </div>
+                   <div>
+                      <h4>Particle Hover Effect (JS)</h4>
+                      <div class = "p_img">
+                       <a href="https://codepen.io/echang1123/pen/YvmNyz" target = "_blank" rel = "noopener noreferrer">
+                          <img src = "img/particle_icon.jpg" alt = "particles">
+                      </a>
+                      </div>
+                  </div>
+                  <div>
+                      <h4>Pong (JS)</h4>
+                      <div class = "p_img">
+                      <a href="https://codepen.io/echang1123/pen/Yjyzaj" target = "_blank" rel = "noopener noreferrer">
+                          <img src = "img/pong_icon.jpg" alt = "pong">
+                      </a>
+                      </div>
+                  </div>
+                  <div>
+                    <h4>Raindrops (Python)</h4>
+                    <div class = "p_img">
+                    <a href="https://github.com/echang1123/RainDrops_Python" target = "_blank" rel = "noopener noreferrer">
+                        <img src = "img/raindr_icon.jpg" alt = "pong">
+                    </a>
+                    </div>
                 </div>
               </div>
-            <div class = "s_box_3">
-              <h4>Spoken Languages</h4>
-              <ul>
-                  <li>English</li>
-                  <li>Korean</li>
-                  <li>(Little bit of) Japanese</li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
+          </section>
+        </div>
+        <div id = "exp">
+          <section>
+              <div class = "page_header">
+                  <div>
+                      <h1>Experience</h1>
+                  </div>
+              </div>
+              <div class = "exp_ctnr">
+                  <div class = "exp_text">
+                      <h2>Full Stack Developer Intern</h2>
+                      <h3>Bazar</h3>
+                      <p>Designed chat system for Bazar's marketplace apps to help vendors sell their products using Django & React Native.</p>
+                      <p>Provided ideas for UI improvements, data optimization, and third-party packages.</p>
+                      <p><strong>Period:</strong> Feb. 2022 - April 2022</p>
+                  </div>
 
+                  <div class = "exp_text">
+                      <h2>Front End Developer Intern</h2>
+                      <h3>Largo Capital, Inc</h3>
+                      <p>Work alongside, communicate with business to translate their needs into a real estate web app.</p>
+                      <p>Participated in daily stand-up meetings in an agile development workflow.</p>
+                      <p>Used Laravel to develop MVC application written in PHP, while using PostgreSQL for our relational database.</p>
+                      <p>Modernized website interface to enhance user experience. (Bootstrap, JQuery, HTML, CSS, Twig)</p>
+                      <p><strong>Period:</strong> Dec. 2020 - August 2021</p>
+                  </div>
+              </div>
+          </section>
+        </div>
         <div id = "edu">
             <section>
                 <div class = "page_header">
@@ -115,7 +173,7 @@
                 </div>
                 <div class = "edu_ctnr">
                     <div id = "edu_text">
-                        <img src = "img/rit_logo.png" alt = "rit_logo" height = "6%" width = "6%" >
+                        <img src = "img/rit_logo.png" alt = "rit_logo" width = "100px" >
                         <h2>Rochester Institute of Technology</h2>
                         <h3>Bachelor of Computer Science 2016-2022</h3>
                         <p>Activities and societies: Tennis Club, Judo Club, KISA (Korean International Student Association), ACS (Asian Culture Society)</p>
@@ -124,93 +182,6 @@
                         <h3>Bachelor of Film &amp; Animation 2013-2016</h3>
                         <p>Took some acting and animation classes.</p>
                         <p>Participated in Ani-Jam (24 hr animation competition).</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div id = "port">
-            <section>
-                <div class = "page_header">
-                    <div>
-                        <h1>Projects</h1>
-                    </div>
-                </div>
-                <div class = "port_text">
-                    <div>
-                      <h4>E-Commerce Site (Amazona)</h4>
-                      <div class = "p_img">
-                      <a href="https://github.com/echang1123/amazonaECommerce" target = "_blank" rel = "noopener noreferrer">
-                          <img src = "img/ecommerce_icon.jpg" alt = "ecommerce_site">
-                      </a>
-                      </div>
-                    </div>
-                    <div>
-                        <h4>Weather App (Vanilla JS)</h4>
-                        <div class = "p_img">
-                        <a href="https://github.com/echang1123/weatherAPI" target = "_blank" rel = "noopener noreferrer">
-                            <img src = "img/weather_icon.jpg" alt = "weather_app">
-                        </a>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>WebCheckers (Java/Ajax/Json/Spark)</h4>
-                        <div class = "p_img">
-                        <a href="https://github.com/echang1123/webCheckers" target = "_blank" rel = "noopener noreferrer">
-                            <img src = "img/wc_icon.jpg" alt = "web_checkers">
-                        </a>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>PathBuilder (Java)</h4>
-                        <div class = "p_img">
-                        <a href="https://github.com/echang1123/pathbuilder" target = "_blank" rel = "noopener noreferrer">
-                            <img src = "img/pb_icon.jpg" alt = "path_builder">
-                        </a>
-                        </div>
-                    </div>
-                     <div>
-                        <h4>Particles Hover Effect (JS Canvas)</h4>
-                        <div class = "p_img">
-                         <a href="https://codepen.io/echang1123/pen/YvmNyz" target = "_blank" rel = "noopener noreferrer">
-                            <img src = "img/particle_icon.jpg" alt = "particles">
-                        </a>
-                        </div>
-                    </div>
-                    <div>
-                        <h4>Pong (JS Canvas)</h4>
-                        <div class = "p_img">
-                        <a href="https://codepen.io/echang1123/pen/Yjyzaj" target = "_blank" rel = "noopener noreferrer">
-                            <img src = "img/pong_icon.jpg" alt = "pong">
-                        </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div id = "exp">
-            <section>
-                <div class = "page_header">
-                    <div>
-                        <h1>Experience</h1>
-                    </div>
-                </div>
-                <div class = "exp_text">
-                    <div class = "exp_text">
-                        <h2>Full Stack Developer Intern</h2>
-                        <h3>Bazar</h3>
-                        <p>Designed chat system for Bazar's marketplace apps to help vendors sell their products using Django & React Native.</p>
-                        <p>Provided ideas for UI improvements, data optimization, and third-party packages.</p>
-                        <p><strong>Period:</strong> Feb. 2022 - April 2022</p>
-                    </div>
-
-                    <div class = "exp_text">
-                        <h2>Front End Developer Intern</h2>
-                        <h3>Largo Capital, Inc</h3>
-                        <p>Work alongside, communicate with business to translate their needs into a real estate web app.</p>
-                        <p>Participated in daily stand-up meetings in an agile development workflow.</p>
-                        <p>Used Laravel to develop MVC application written in PHP, while using PostgreSQL for our relational database.</p>
-                        <p>Modernized website interface to enhance user experience. (Bootstrap, JQuery, HTML, CSS, Twig)</p>
-                        <p><strong>Period:</strong> Dec. 2020 - August 2021</p>
                     </div>
                 </div>
             </section>
@@ -224,17 +195,15 @@
                 </div>
                 <div class = "contact_text">
                     <div>
-                        <img src = "img/contact_photo.jpg" alt = "contact" width = "18%">
+                        <img src = "img/contact_photo.jpg" alt = "contact" width = "200px">
                         <h3>E-mail: eugenechang1123@gmail.com</h3>
                         <h3>LinkedIn: <a href = "https://www.linkedin.com/in/eugene-chang-0123123/" target = "_blank" rel = "noopener noreferrer" style="">https://linkedin.com/in/eugene-chang-0123123</a></h3>
-                        <!-- <h3>CodePen: <a href = "https://codepen.io/echang1123/#" target = "_blank" rel = "noopener noreferrer" style = "">https://codepen.io/echang1123/#</a></h3> -->
                         <h3>Github: <a href = "https://github.com/echang1123" target = "_blank" rel = "noopener noreferrer" style = "">https://github.com/echang1123</a></h3>
                     </div>
                 </div>
             </section>
         </div>
-
-        <script src = "js/pong.js"></script>
+        <!-- <script src = "js/pong.js"></script> -->
         <script src = "js/particle_effect.js"></script>
     </body>
 </html>

@@ -9,14 +9,15 @@ var mouse = {
     y: undefined
 }
 
-var maxRadius = 20;
+var maxRadius = 18;
 
 var colorArray = [
-    '#FF9C00',
-    '#D93B0A',
+    // '#FF9C00',
+    // '#D93B0A',
     '#C20165',
-    '#4C0C82',
-    '#061766',
+    // '#d378a7',
+    // '#4C0C82',
+    // '#061766',
 ];
 
 window.addEventListener( 'mousemove', function( event ) {
@@ -79,8 +80,8 @@ var circleArray = [];
 function init() {
 
     circleArray = [];
-    // number of circles
-    for( var i = 0; i < 70; i++ ) {
+    // number of particles
+    for( var i = 0; i < 20; i++ ) {
         var radius = Math.random() * 4 + 1;
         var x = Math.random() * ( innerWidth - radius * 2 ) + radius;
         var y = Math.random() * ( innerHeight - radius * 2 ) + radius;
