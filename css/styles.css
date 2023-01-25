@@ -3,6 +3,15 @@ html, body {
   margin: 0;
   scroll-behavior: smooth;
 }
+
+p {
+	font-family: Arial;
+}
+
+ul {
+	font-family: Arial;
+}
+
 /* For creating a separate top Nav Bar with shadow */
 header {
   background: white;
@@ -23,8 +32,8 @@ header {
 #nav-container {
   position: relative;
 	margin: 0 auto;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 200;
+  font-weight: 600;
+	font-family: Arial;
 }
 nav {
     float: left;
@@ -78,6 +87,7 @@ h1 {
 
 h2, h3 {
   text-transform: uppercase;
+	font-family: Arial;
 }
 h3 {
   font-weight: 400;
@@ -88,11 +98,12 @@ h4 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 1 1 1 1;
+	font-family: Arial;
 }
 
 .page_header {
+	font-family: Arial;
   display: flex;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   justify-content: center;
 }
 .page_header div {
@@ -118,22 +129,30 @@ h4 {
 .port_text img {
   border-radius: 20px;
 }
+
+.port_text video {
+	border-radius: 20px;
+}
+
 #port h4 {
   font-weight: normal;
   letter-spacing: 0.13em;
 }
 
-.port_text {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  justify-content: center;
-  margin-left: 15em;
-  margin-right: 15em;
+.port_text_container {
+	display: flex;
+	/* max-width: 1040px; */
+	margin-left: 10rem;
+	margin-right: 10rem;
+	justify-content: center;
+	z-index: 0;
+}
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  justify-content: center;
-  align-items: end;
-  z-index: 0;
+.port_text {
+	display: grid;
+	align-items: end;
+	
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .port_text div {
   margin-right: 1em;
@@ -155,8 +174,8 @@ position: relative;
 }
 
 #profile_ctnr {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  display: flex;
+
+	display: flex;
   justify-content: center;
 
   display: flex;
@@ -206,8 +225,7 @@ position: relative;
     background-color: rgb(245, 245, 207);
 }
 .edu_ctnr {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  display: flex;
+	display: flex;
   justify-content: center;
 
   display: block;
@@ -248,7 +266,6 @@ position: relative;
 
 .exp_text {
   display: block;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   justify-content: center;
 }
 
@@ -265,7 +282,6 @@ position: relative;
   border-radius: 20px;
 }
 .contact_text {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   justify-content: center;
 }
 
