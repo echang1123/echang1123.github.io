@@ -1,21 +1,22 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
 }
 
 p {
-	font-family: Arial;
+  font-family: Arial;
 }
 
 ul {
-	font-family: Arial;
+  font-family: Arial;
 }
 
 /* For creating a separate top Nav Bar with shadow */
 header {
   background: white;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .header::after {
   content: '';
@@ -31,41 +32,41 @@ header {
 }
 #nav-container {
   position: relative;
-	margin: 0 auto;
+  margin: 0 auto;
   font-weight: 600;
-	font-family: Arial;
+  font-family: Arial;
 }
 nav {
-    float: left;
+  float: left;
 }
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 nav li {
-    display: inline-block;
-    margin-left: 1.25em;
-    padding-top: 1.1em;
-    padding-bottom: 1.1em;
-    position: relative;
+  display: inline-block;
+  margin-left: 1.25em;
+  padding-top: 1.1em;
+  padding-bottom: 1.1em;
+  position: relative;
 }
 nav a {
-    color: #444;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.88em;
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.88em;
 }
 nav a::before {
-    content: '';
-    display: block;
-    height: 7%;   
-    background-color: #595959;
-    position: absolute;
-    top: 12%;
-    border-radius: 30px;
-    width: 0%;
-    transition: all ease-in-out 240ms;
+  content: '';
+  display: block;
+  height: 7%;
+  background-color: #595959;
+  position: absolute;
+  top: 12%;
+  border-radius: 30px;
+  width: 0%;
+  transition: all ease-in-out 240ms;
 }
 nav a:hover::before {
   width: 100%;
@@ -82,12 +83,13 @@ h1 {
   color: #0f1025;
   letter-spacing: 0.1em;
   border-bottom: 0.085em solid rgba(0, 0, 0, 0.651);
-  padding-bottom: .255em;
+  padding-bottom: 0.255em;
 }
 
-h2, h3 {
+h2,
+h3 {
   text-transform: uppercase;
-	font-family: Arial;
+  font-family: Arial;
 }
 h3 {
   font-weight: 400;
@@ -98,27 +100,26 @@ h4 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 1 1 1 1;
-	font-family: Arial;
+  font-family: Arial;
 }
 
 .page_header {
-	font-family: Arial;
-	display: flex;
-	justify-content: center;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
 }
 .page_header div {
   margin-top: 4em;
   z-index: 0;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 #about {
-    height: 100%;
+  height: 100%;
 }
 #about h1 {
   font-weight: bold;
 }
-
 
 #port {
   background-color: rgb(231, 231, 231);
@@ -130,18 +131,18 @@ h4 {
 }
 
 .port_text_container {
-	display: flex;
-	/* max-width: 1040px; */
-	margin-left: 8rem;
-	margin-right: 8rem;
-	justify-content: center;
-	z-index: 0;
+  display: flex;
+  /* max-width: 1040px; */
+  margin-left: 8rem;
+  margin-right: 8rem;
+  justify-content: center;
+  z-index: 0;
 }
 
 .port_text {
-	display: grid;
-	align-items: end;	
-  	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: grid;
+  align-items: end;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .port_text div {
@@ -152,7 +153,7 @@ h4 {
 }
 .port_text h4 {
   text-align: center;
-  z-index:  0;
+  z-index: 0;
   position: relative;
 }
 .port_text img {
@@ -161,43 +162,44 @@ h4 {
   border-radius: 20px;
 }
 
-.p_img, p_video {
-	text-align: center;
-	z-index: 0;
-	position: relative;
+.p_img,
+p_video {
+  text-align: center;
+  z-index: 0;
+  position: relative;
 }
 
 .projects-work {
-	display: flex;
-	margin-left: 8rem;
-	margin-right: 8rem;
-	justify-content: center;
-	margin-bottom: 3em;
+  display: flex;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  justify-content: center;
+  margin-bottom: 3em;
 }
 
 .projects-work-grid {
-	display: grid;
-	grid-template-columns: repeat(5, minmax(200px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
 }
 
 .projects-work-grid div {
-	margin-right: 1em;
-	margin-left: 1em;
-	justify-self: center;
+  margin-right: 1em;
+  margin-left: 1em;
+  justify-self: center;
 }
 .projects-work-grid h4 {
-	text-align: center;
-	/* z-index:  0; */
-	/* position: relative; */
+  text-align: center;
+  /* z-index:  0; */
+  /* position: relative; */
 }
 
 .projects-work-grid img {
-	width: 100%;
-	height: 100%;
-	border-radius: 20px;
-  }
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
 .projects-work-grid video {
-	border-radius: 20px;
+  border-radius: 20px;
 }
 /* .page_header {
 	font-family: Arial;
@@ -220,21 +222,21 @@ h4 {
 } */
 
 .work_header {
-	display: flex;
-	justify-content: center;
-	color: #0f1025;
+  display: flex;
+  justify-content: center;
+  color: #0f1025;
 
-	/* margin-top: 4em; */
+  /* margin-top: 4em; */
 }
 
 .work_header div {
-	z-index: 0;
-	margin-bottom: 0
+  z-index: 0;
+  margin-bottom: 0;
 }
 
 .work_header h2 {
-	border-bottom: 0.085em solid rgba(0, 0, 0, 0.651);
-	padding-bottom: .255em;
+  border-bottom: 0.085em solid rgba(0, 0, 0, 0.651);
+  padding-bottom: 0.255em;
 }
 
 #profile_ctnr {
@@ -242,14 +244,14 @@ h4 {
   margin-top: 4em;
   margin-bottom: 3em;
   justify-content: space-evenly;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 #profile_ctnr div {
-    position: relative;
+  position: relative;
 }
 #profile_pic {
-    top: 1.5em;
-    margin-left: 8.0em;
+  top: 1.5em;
+  margin-left: 8em;
 }
 #profile_pic img {
   border-radius: 20px;
@@ -282,24 +284,23 @@ h4 {
 } */
 
 #edu {
-    background-color: rgb(245, 245, 207);
+  background-color: rgb(245, 245, 207);
 }
 .edu_ctnr {
-	padding-bottom: 3em;
+  padding-bottom: 3em;
 }
 
-
 #edu p {
-  letter-spacing: 0.020em;
+  letter-spacing: 0.02em;
   font-size: 1em;
 }
 
-.edu_ctnr div, .contact_text div {
-    text-align: center;
-    padding: 1em 1.5em 2em 1.5em; 
-    letter-spacing: 0.085em;
+.edu_ctnr div,
+.contact_text div {
+  text-align: center;
+  padding: 1em 1.5em 2em 1.5em;
+  letter-spacing: 0.085em;
 }
-
 
 #exp {
   background-color: rgb(117, 146, 241);
@@ -313,12 +314,12 @@ h4 {
 }
 
 .exp_ctnr {
-	padding-bottom: 3em;
+  padding-bottom: 3em;
 }
 
 .exp_ctnr div {
   text-align: center;
-  padding: 1em 1.5em 2em 1.5em; 
+  padding: 1em 1.5em 2em 1.5em;
   letter-spacing: 0.085em;
   border-bottom-color: white;
 }
@@ -330,12 +331,12 @@ h4 {
 
 #exp p {
   font-size: 1em;
-  letter-spacing: 0.020em;
+  letter-spacing: 0.02em;
 }
 
 #contact {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 #contact img {
   border-radius: 20px;
@@ -348,7 +349,7 @@ h4 {
 
 @media (max-width: 535px) {
   #nav-container {
-    font-size: .90em;
+    font-size: 0.9em;
   }
 }
 @media (max-width: 795px) {
@@ -360,14 +361,13 @@ h4 {
   }
   #profile_text {
     top: 2em;
-    font-size: .9em;
+    font-size: 0.9em;
     margin-left: 1em;
     width: 100vw;
   }
   #profile_pic img {
     width: 35vw;
   }
-  
 }
 @media (max-width: 1055px) {
   #profile_pic {
@@ -377,12 +377,13 @@ h4 {
     margin-right: 0em;
   }
   .projects-work-grid {
-	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
 }
 @media (max-width: 1600px) {
-	.port_text, .projects-work-grid {
-		margin-left: 0em;    
-		margin-right: 0em;    
-	}
+  .port_text,
+  .projects-work-grid {
+    margin-left: 0em;
+    margin-right: 0em;
+  }
 }

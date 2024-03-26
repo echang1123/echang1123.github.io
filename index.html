@@ -1,266 +1,384 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-      
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset = "UTF-8">
-        <title>Eugene Chang</title>
-        <link href = "http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel = "stylesheet">
-        <link href = "css/styles.css" rel = "stylesheet" type = "text/css">
-        <link href = "https://fonts.googleapis.com/css?family=Work+Sans:400,600">
-				<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
-        <script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src = "js/main.js"></script>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Eugene Chang</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
 
-        <header id = "navbar">
-            <div id = "nav-container">
-                <nav>
-                    <ul>
-                        <li><a href = "#about">Bio</a></li>
-                        <li><a href = "#port">Projects</a></li>
-                        <li><a href = "#exp">Experience</a></li>
-                        <li><a href = "#edu">Education</a></li>
-                        <li><a href = "#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    </head>
-    
-    <body>
-        <div class="particles">
-          <canvas id = "particlesEffect"></canvas>
+    <header id="navbar">
+      <div id="nav-container">
+        <nav>
+          <ul>
+            <li><a href="#about">Bio</a></li>
+            <li><a href="#port">Projects</a></li>
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </head>
+
+  <body>
+    <div class="particles">
+      <canvas id="particlesEffect"></canvas>
+    </div>
+    <div id="about">
+      <div class="page_header">
+        <div>
+          <h1>Bio</h1>
         </div>
-        <div id = "about">
-            <div class = "page_header">
-                <div>
-                    <h1>Bio</h1>           
-                </div>         
-            </div>
+      </div>
 
-              <!-- <div class="pong">
+      <!-- <div class="pong">
                 <canvas id = "pongCanvas" width = "1720px" height = "720px"></canvas>
               </div> -->
 
-              <div id = "profile_ctnr">
-                  <div id = "profile_pic">
-                      <img src = "img/profile_pic.jpg" alt = "profile picture">
-                  </div>
-                  <div id="profile_text">
-                      <div>
-                          <h4>A little bit about myself...</h4>
-                          <p> I have about 5 years of university back-end lang(s)/algorithm experience and I've been a front-end/full-stack web developer for about 3-4 years recently.  
-                            I appreciate sleek, modern designs and am looking for front end work.  
-                            <br/>
-                            <br/>
-                            Thanks for visiting my site!  &nbsp <a href = "#port">Here's some of my projects! </a>.
-                            <br/>
-                            <br/>
-                            <a href = "#contact">Here's my contact info!</a>
-                          </p>
-                      </div>
-                      <div>
-                          <h4>When I'm not coding...</h4>
-                          <ul id="interests">
-                              <li>~  I enjoy listening to music  ~</li>
-                              <li>~  Exercise/Yoga  ~</li>
-                          </ul>
-                      </div>
-                  </div>
+      <div id="profile_ctnr">
+        <div id="profile_pic">
+          <img src="img/profile_pic.jpg" alt="profile picture" />
+        </div>
+        <div id="profile_text">
+          <div>
+            <h4>A little bit about myself...</h4>
+            <p>
+              I have about 5 years of university back-end lang(s)/algorithm
+              experience and I've been a front-end/full-stack web developer for
+              about 3-4 years recently. I appreciate sleek, modern designs and
+              am looking for front end work.
+              <br />
+              <br />
+              Thanks for visiting my site! &nbsp
+              <a href="#port">Here's some of my projects! </a>.
+              <br />
+              <br />
+              <a href="#contact">Here's my contact info!</a>
+            </p>
+          </div>
+          <div>
+            <h4>When I'm not coding...</h4>
+            <ul id="interests">
+              <li>~ I enjoy listening to music ~</li>
+              <li>~ Exercise/Yoga ~</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="port" class="">
+      <section>
+        <div class="page_header">
+          <div>
+            <h1>Projects</h1>
+          </div>
+        </div>
+        <div class="work_header">
+          <div>
+            <h2>Work Projects</h2>
+          </div>
+        </div>
+        <div class="projects-work">
+          <div class="projects-work-grid">
+            <div>
+              <h4>StarHealth (Upwork)</h4>
+              <div class="p_img p_video">
+                <iframe
+                  width="300"
+                  height="280"
+                  src="https://www.youtube.com/embed/SRdkcDRXPus"
+                  style="border-radius: 20px"
+                >
+                </iframe>
               </div>
+            </div>
 
-        </div>
-        <div id = "port" class="">
-        	<section>
-				<div class = "page_header">
-                  <div>
-                      <h1>Projects</h1>
-                  </div>
-				</div>
-				<div class="work_header">
-					<div>
-						<h2>Work Projects</h2>
-					</div>
-				</div>
-				<div class="projects-work">
-					<div class="projects-work-grid">
-						<div>
-							<h4>StarHealth (Upwork Client / starhealth.io)</h4>
-							<div class = "p_img p_video">
-								<video width="200px" height="150px" controls>
-									<source src="video/starhealth_demo.mp4" type="video/mp4">
-								</video>
-							</div>
-						</div>
-
-						<div>
-                    		<h4>Chat Screen (Bazar Marketplace App)</h4>
-							<div class = "p_img">
-								<img src = "img/Bazar/chat_screen.png" alt = "weather_app">
-							</div>
-                  		</div>
-
-						<div>
-                    		<h4>Chat Screen (OfferUp - Bazar SS N/A )</h4>
-							<div class = "p_img">
-								<img src = "img/Bazar/chat_screen_2.png" alt = "weather_app">
-							</div>
-                  		</div>
-						<div>
-							<h4>Dashboard (Largo Credit)</h4>
-							<div class = "p_img">
-								<img src = "img/Largo/largo_credit_1.png" alt = "weather_app">
-							</div>
-						</div>
-						<div>
-							<h4>Active Deals (Largo Credit)</h4>
-							<div class = "p_img">
-								<img src = "img/Largo/largo_credit_2.png" alt = "weather_app">
-							</div>
-						</div>
-						<div>
-							<h4>Company List - Collapsible (Largo Credit)</h4>
-							<div class = "p_img">
-								<img src = "img/Largo/largo_credit_3.png" alt = "weather_app">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="work_header">
-					<div>
-						<h2>Personal Projects</h2>
-					</div>
-				</div>
-				<div class="port_text_container">
-					<div class = "port_text">
-						<div>
-                    		<h4>E-Commerce Site (Amazona)</h4>
-							<div class = "p_img">
-								<a href="https://github.com/echang1123/amazonaECommerce" target = "_blank" rel = "noopener noreferrer">
-									<img src = "img/ecommerce_icon.jpg" alt = "ecommerce_site">
-								</a>
-							</div>
-                  		</div>
-                  		<div>
-							<h4>Weather App (Vanilla JS)</h4>
-							<div class = "p_img">
-								<a href="https://github.com/echang1123/weatherAPI" target = "_blank" rel = "noopener noreferrer">
-									<img src = "img/weather_icon.jpg" alt = "weather_app">
-								</a>
-							</div>
-                 		 </div>
-						<div>
-							<h4>WebCheckers (Java/Ajax)</h4>
-							<div class = "p_img">
-								<a href="https://github.com/echang1123/webCheckers" target = "_blank" rel = "noopener noreferrer">
-									<img src = "img/wc_icon.jpg" alt = "web_checkers">
-								</a>
-							</div>
-						</div>
-						<div>
-							<h4>PathBuilder (Java)</h4>
-							<div class = "p_img">
-								<a href="https://github.com/echang1123/pathbuilder" target = "_blank" rel = "noopener noreferrer">
-									<img src = "img/pb_icon.jpg" alt = "path_builder">
-								</a>
-							</div>
-						</div>
-						<div>
-							<h4>Particle Hover Effect (JS)</h4>
-							<div class = "p_img">
-								<a href="https://codepen.io/echang1123/pen/YvmNyz" target = "_blank" rel = "noopener noreferrer">
-									<img src = "img/particle_icon.jpg" alt = "particles">
-								</a>
-							</div>
-						</div>
-						<div>
-							<h4>Pong (JS)</h4>
-							<div class = "p_img">
-								<a href="https://codepen.io/echang1123/pen/Yjyzaj" target = "_blank" rel = "noopener noreferrer">
-									<img src = "img/pong_icon.jpg" alt = "pong">
-								</a>
-							</div>
-						</div>
-						<div>
-							<h4>Raindrops (Python)</h4>
-							<div class = "p_img">
-								<a href="https://github.com/echang1123/RainDrops_Python" target = "_blank" rel = "noopener noreferrer">
-									<img src = "img/raindr_icon.jpg" alt = "pong">
-								</a>
-							</div>
-						</div>
-              		</div>
-				</div>
-          	</section>
-        </div>
-        <div id = "exp">
-          <section>
-              <div class = "page_header">
-                  <div>
-                      <h1>Experience</h1>
-                  </div>
+            <div>
+              <h4>Largo Credit Portal</h4>
+              <div class="p_img p_video">
+                <iframe
+                  width="300"
+                  height="280"
+                  src="https://www.youtube.com/embed/z4S6Q8tZvEM"
+                  style="border-radius: 20px"
+                >
+                </iframe>
               </div>
-              <div class = "exp_ctnr">
-                  <div class = "exp_text">
-                      <h2>Full Stack Developer</h2>
-                      <h3>Bazar Marketplace, Inc</h3>
-                      <p>Designed chat system for Bazar's marketplace apps to help vendors sell their products using Django & React Native.</p>
-                      <p>Provided ideas for UI improvements, data optimization, and third-party packages.</p>
-                      <p><strong>Period:</strong> Feb. 2022 - April 2022</p>
-                  </div>
+            </div>
 
-                  <div class = "exp_text">
-                      <h2>Front End Developer</h2>
-                      <h3>Largo Capital, Inc</h3>
-                      <p>Work alongside, communicate with business to translate their needs into a real estate web app.</p>
-                      <p>Participated in daily stand-up meetings in an agile development workflow.</p>
-                      <p>Used Laravel to develop MVC application written in PHP, while using PostgreSQL for our relational database.</p>
-                      <p>Modernized website interface to enhance user experience. (Bootstrap, JQuery, HTML, CSS, Twig)</p>
-                      <p><strong>Period:</strong> Dec. 2020 - August 2021</p>
-                  </div>
+            <div>
+              <h4>Bazar Mobile App</h4>
+              <div class="p_img p_video">
+                <iframe
+                  width="300"
+                  height="280"
+                  src="https://www.youtube.com/embed/XcqQu9TmsVQ"
+                  style="border-radius: 20px"
+                >
+                </iframe>
               </div>
-          </section>
+            </div>
+
+            <div>
+              <h4>Bazar Mobile App (Chat)</h4>
+              <div class="p_img p_video">
+                <iframe
+                  width="300"
+                  height="280"
+                  src="https://www.youtube.com/embed/8mjF27Stkwg"
+                  style="border-radius: 20px"
+                >
+                </iframe>
+              </div>
+            </div>
+
+            <div>
+              <h4>Chat Screen (Bazar Marketplace App)</h4>
+              <div class="p_img">
+                <img src="img/Bazar/chat_screen.png" alt="weather_app" />
+              </div>
+            </div>
+
+            <div>
+              <h4>Chat Screen (OfferUp - Bazar SS N/A )</h4>
+              <div class="p_img">
+                <img src="img/Bazar/chat_screen_2.png" alt="weather_app" />
+              </div>
+            </div>
+            <div>
+              <h4>Dashboard (Largo Credit)</h4>
+              <div class="p_img">
+                <img src="img/Largo/largo_credit_1.png" alt="weather_app" />
+              </div>
+            </div>
+            <div>
+              <h4>Active Deals (Largo Credit)</h4>
+              <div class="p_img">
+                <img src="img/Largo/largo_credit_2.png" alt="weather_app" />
+              </div>
+            </div>
+            <div>
+              <h4>Company List - Collapsible (Largo Credit)</h4>
+              <div class="p_img">
+                <img src="img/Largo/largo_credit_3.png" alt="weather_app" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div id = "edu">
-            <section>
-                <div class = "page_header">
-                    <div>
-                        <h1 id = "edu_header">Education</h1>
-                    </div>
-                </div>
-                <div class = "edu_ctnr">
-                    <div id = "edu_text">
-                        <img src = "img/rit_logo.png" alt = "rit_logo" width = "100px" >
-                        <h2>Rochester Institute of Technology</h2>
-                        <h3>Bachelor of Computer Science 2016-2022</h3>
-                        <p>Activities and societies: Tennis Club, Judo Club, KISA (Korean International Student Association), ACS (Asian Culture Society)</p>
-                        <p>Exposure to a lot of back-end Java, Python and some experience with machine learning/training data..</p>
-                        <br/>
-                        <h3>Bachelor of Film &amp; Animation 2013-2016</h3>
-                        <p>Took some acting and animation classes.</p>
-                        <p>Participated in Ani-Jam (24 hr animation competition).</p>
-                    </div>
-                </div>
-            </section>
+        <div class="work_header">
+          <div>
+            <h2>Personal Projects</h2>
+          </div>
         </div>
-        <div id = "contact">
-            <section>
-                <div class = "page_header">
-                    <div>
-                        <h1 id = "contact_header">Contact Me</h1>
-                    </div>
-                </div>
-                <div class = "contact_text">
-                    <div>
-                        <img src = "img/contact_photo.jpg" alt = "contact" width = "200px">
-                        <h3>E-mail: eugenechang1123@gmail.com</h3>
-                        <h3>LinkedIn: <a href = "https://www.linkedin.com/in/eugene-chang-0123123/" target = "_blank" rel = "noopener noreferrer" style="">https://linkedin.com/in/eugene-chang-0123123</a></h3>
-                        <h3>Github: <a href = "https://github.com/echang1123" target = "_blank" rel = "noopener noreferrer" style = "">https://github.com/echang1123</a></h3>
-                    </div>
-                </div>
-            </section>
+        <div class="port_text_container">
+          <div class="port_text">
+            <div>
+              <h4>E-Commerce Site (Amazona)</h4>
+              <div class="p_img">
+                <a
+                  href="https://github.com/echang1123/amazonaECommerce"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="img/ecommerce_icon.jpg" alt="ecommerce_site" />
+                </a>
+              </div>
+            </div>
+            <div>
+              <h4>Weather App (Vanilla JS)</h4>
+              <div class="p_img">
+                <a
+                  href="https://github.com/echang1123/weatherAPI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="img/weather_icon.jpg" alt="weather_app" />
+                </a>
+              </div>
+            </div>
+            <div>
+              <h4>WebCheckers (Java/Ajax)</h4>
+              <div class="p_img">
+                <a
+                  href="https://github.com/echang1123/webCheckers"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="img/wc_icon.jpg" alt="web_checkers" />
+                </a>
+              </div>
+            </div>
+            <div>
+              <h4>PathBuilder (Java)</h4>
+              <div class="p_img">
+                <a
+                  href="https://github.com/echang1123/pathbuilder"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="img/pb_icon.jpg" alt="path_builder" />
+                </a>
+              </div>
+            </div>
+            <div>
+              <h4>Particle Hover Effect (JS)</h4>
+              <div class="p_img">
+                <a
+                  href="https://codepen.io/echang1123/pen/YvmNyz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="img/particle_icon.jpg" alt="particles" />
+                </a>
+              </div>
+            </div>
+            <div>
+              <h4>Pong (JS)</h4>
+              <div class="p_img">
+                <a
+                  href="https://codepen.io/echang1123/pen/Yjyzaj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="img/pong_icon.jpg" alt="pong" />
+                </a>
+              </div>
+            </div>
+            <div>
+              <h4>Raindrops (Python)</h4>
+              <div class="p_img">
+                <a
+                  href="https://github.com/echang1123/RainDrops_Python"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="img/raindr_icon.jpg" alt="pong" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- <script src = "js/pong.js"></script> -->
-        <script src = "js/particle_effect.js"></script>
-    </body>
+      </section>
+    </div>
+    <div id="exp">
+      <section>
+        <div class="page_header">
+          <div>
+            <h1>Experience</h1>
+          </div>
+        </div>
+        <div class="exp_ctnr">
+          <div class="exp_text">
+            <h2>Full Stack Developer</h2>
+            <h3>Bazar Marketplace, Inc</h3>
+            <p>
+              Designed chat system for Bazar's marketplace apps to help vendors
+              sell their products using Django & React Native.
+            </p>
+            <p>
+              Provided ideas for UI improvements, data optimization, and
+              third-party packages.
+            </p>
+            <p><strong>Period:</strong> Feb. 2022 - April 2022</p>
+          </div>
+
+          <div class="exp_text">
+            <h2>Front End Developer</h2>
+            <h3>Largo Capital, Inc</h3>
+            <p>
+              Work alongside, communicate with business to translate their needs
+              into a real estate web app.
+            </p>
+            <p>
+              Participated in daily stand-up meetings in an agile development
+              workflow.
+            </p>
+            <p>
+              Used Laravel to develop MVC application written in PHP, while
+              using PostgreSQL for our relational database.
+            </p>
+            <p>
+              Modernized website interface to enhance user experience.
+              (Bootstrap, JQuery, HTML, CSS, Twig)
+            </p>
+            <p><strong>Period:</strong> Dec. 2020 - August 2021</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="edu">
+      <section>
+        <div class="page_header">
+          <div>
+            <h1 id="edu_header">Education</h1>
+          </div>
+        </div>
+        <div class="edu_ctnr">
+          <div id="edu_text">
+            <img src="img/rit_logo.png" alt="rit_logo" width="100px" />
+            <h2>Rochester Institute of Technology</h2>
+            <h3>Bachelor of Computer Science 2016-2022</h3>
+            <p>
+              Activities and societies: Tennis Club, Judo Club, KISA (Korean
+              International Student Association), ACS (Asian Culture Society)
+            </p>
+            <p>
+              Exposure to a lot of back-end Java, Python and some experience
+              with machine learning/training data..
+            </p>
+            <br />
+            <h3>Bachelor of Film &amp; Animation 2013-2016</h3>
+            <p>Took some acting and animation classes.</p>
+            <p>Participated in Ani-Jam (24 hr animation competition).</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="contact">
+      <section>
+        <div class="page_header">
+          <div>
+            <h1 id="contact_header">Contact Me</h1>
+          </div>
+        </div>
+        <div class="contact_text">
+          <div>
+            <img src="img/contact_photo.jpg" alt="contact" width="200px" />
+            <h3>E-mail: eugenechang1123@gmail.com</h3>
+            <h3>
+              LinkedIn:
+              <a
+                href="https://www.linkedin.com/in/eugene-chang-0123123/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style=""
+                >https://linkedin.com/in/eugene-chang-0123123</a
+              >
+            </h3>
+            <h3>
+              Github:
+              <a
+                href="https://github.com/echang1123"
+                target="_blank"
+                rel="noopener noreferrer"
+                style=""
+                >https://github.com/echang1123</a
+              >
+            </h3>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- <script src = "js/pong.js"></script> -->
+    <script src="js/particle_effect.js"></script>
+  </body>
 </html>
